@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Your Name</title>
 
-  <!-- ----------  Minimal in-page styling  ---------- -->
   <style>
     :root {
       --accent: #1a1a1a;
@@ -20,120 +19,163 @@
       color: var(--accent);
       background: var(--light);
     }
-    header {
+
+    /* --- Layout --------------------------------------------------------- */
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+    .sidebar {
+      width: 260px;
+      min-height: 100vh;
       background: white;
-      border-bottom: 2px solid var(--accent);
+      border-right: 2px solid var(--accent);
+      padding: 1.5rem 1rem;
       position: sticky;
       top: 0;
-      z-index: 10;
-    }
-    nav {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0.6rem 1rem;
       display: flex;
-      gap: 1.25rem;
-      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: flex-start;
     }
-    nav a {
+    .sidebar img {
+      width: 100%;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+    .sidebar h1 {
+      font-size: 1.75rem;
+      margin: 0 0 1.5rem;
+    }
+    .sidebar nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .sidebar nav a {
       text-decoration: none;
       color: var(--accent);
       font-weight: 600;
     }
-    nav a:hover { text-decoration: underline; }
+    .sidebar nav a:hover {
+      text-decoration: underline;
+    }
 
-    main { max-width: var(--max-width); margin: 2.5rem auto; padding: 0 1rem; }
-    h1 { margin-top: 0; font-size: 2.25rem; }
+    main {
+      flex: 1;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2.5rem 1rem;
+    }
     h2 { margin-top: 3rem; }
     h3 { margin-top: 1.5rem; }
     hr  { border: none; border-top: 2px solid var(--accent); margin: 3rem 0 2rem; }
 
-    /* toggleable abstracts via <details> */
     details { margin: 0.8rem 0 1.3rem; }
     summary { cursor: pointer; font-weight: 600; }
 
-    /* simple responsiveness */
-    @media (max-width: 600px) {
-      nav { gap: 0.75rem; }
+    /* --- Responsive tweaks --------------------------------------------- */
+    @media (max-width: 800px) {
+      .wrapper { flex-direction: column; }
+      .sidebar {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        border-right: none;
+        border-bottom: 2px solid var(--accent);
+      }
+      .sidebar img {
+        width: 60px;
+        margin: 0 1rem 0 0;
+      }
+      .sidebar h1 {
+        font-size: 1.25rem;
+        margin: 0 1rem 0 0;
+      }
+      .sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
     }
   </style>
 </head>
 
 <body>
-  <!-- ----------  Top Navigation ---------- -->
-  <header>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#jmp">Job Market Paper</a>
-      <a href="#publications">Publications</a>
-      <a href="#working">Working Papers</a>
-      <a href="#wip">Work in Progress</a>
-    </nav>
-  </header>
-
-  <!-- ----------  Page Content ---------- -->
-  <main>
-    <!-- About -->
-    <section id="about">
+  <div class="wrapper">
+    <!-- ----------------------- Sidebar --------------------------------- -->
+    <aside class="sidebar">
+      <!-- Replace 'me.jpg' with your actual photo file name -->
+      <img src="me.jpg" alt="Your photo">
       <h1>Your Name</h1>
-      <p>123 Academic Ave · Hometown, Country · <a href="mailto:you@example.com">you@example.com</a></p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#jmp">Job Market Paper</a>
+        <a href="#publications">Publications</a>
+        <a href="#working">Working Papers</a>
+        <a href="#wip">Work in Progress</a>
+      </nav>
+    </aside>
 
-      <p>
-        I am a <strong>POSITION</strong> at <em>Institution</em>.  
-        My research focuses on <em>key interests</em>.  
-        Download my <a href="cv.pdf">CV</a>.
-      </p>
-      <hr>
-    </section>
-
-    <!-- Job-Market Paper -->
-    <section id="jmp">
-      <h2>Job Market Paper</h2>
-
-      <h3><a href="paper-link.pdf">Title of Your JMP</a></h3>
-      <p><em>Conference / Award highlights · Year</em></p>
-
-      <details>
-        <summary>Show / hide abstract</summary>
+    <!-- --------------------- Main content ------------------------------ -->
+    <main>
+      <!-- About -->
+      <section id="about">
         <p>
-          Concise abstract goes here. Keep it informative but brief so readers
-          can quickly grasp your contribution.
+          I am a <strong>POSITION</strong> at <em>Institution</em>.<br>
+          My research focuses on <em>key interests</em>.<br>
+          Download my <a href="cv.pdf">CV</a>.
         </p>
-      </details>
-    </section>
+        <hr>
+      </section>
 
-    <!-- Publications -->
-    <section id="publications">
-      <h2>Publications</h2>
+      <!-- Job-Market Paper -->
+      <section id="jmp">
+        <h2>Job Market Paper</h2>
 
-      <h3>Article Title</h3>
-      <p><em>Journal Name</em>, Vol #, Issue # (Year): pp-pp (with Co-authors)</p>
-      <details><summary>Show / hide abstract</summary>
-        <p>Abstract text …</p>
-      </details>
-    </section>
+        <h3><a href="paper-link.pdf">Title of Your JMP</a></h3>
+        <p><em>Conference / Award highlights · Year</em></p>
 
-    <!-- Working Papers -->
-    <section id="working">
-      <h2>Working Papers</h2>
+        <details>
+          <summary>Show / hide abstract</summary>
+          <p>
+            Concise abstract goes here.
+          </p>
+        </details>
+      </section>
 
-      <h3>Paper Title</h3>
-      <p>with Co-author A, Co-author B · Last update: Month Year</p>
-      <details><summary>Show / hide abstract</summary>
-        <p>Abstract text …</p>
-      </details>
-    </section>
+      <!-- Publications -->
+      <section id="publications">
+        <h2>Publications</h2>
 
-    <!-- Work in Progress -->
-    <section id="wip">
-      <h2>Work in Progress</h2>
+        <h3>Article Title</h3>
+        <p><em>Journal Name</em>, Vol #, Issue # (Year): pp-pp (with Co-authors)</p>
+        <details><summary>Show / hide abstract</summary>
+          <p>Abstract text …</p>
+        </details>
+      </section>
 
-      <h3>Project Title</h3>
-      <p>with Collaborator A, Collaborator B · Funding/Award info</p>
-      <details><summary>Show / hide abstract</summary>
-        <p>Description text …</p>
-      </details>
-    </section>
-  </main>
+      <!-- Working Papers -->
+      <section id="working">
+        <h2>Working Papers</h2>
+
+        <h3>Paper Title</h3>
+        <p>with Co-author A, Co-author B · Last update: Month Year</p>
+        <details><summary>Show / hide abstract</summary>
+          <p>Abstract text …</p>
+        </details>
+      </section>
+
+      <!-- Work in Progress -->
+      <section id="wip">
+        <h2>Work in Progress</h2>
+
+        <h3>Project Title</h3>
+        <p>with Collaborator A, Collaborator B · Funding/Award info</p>
+        <details><summary>Show / hide abstract</summary>
+          <p>Description text …</p>
+        </details>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
