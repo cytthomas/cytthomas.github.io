@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Thomas Chan</title>
+  <title>Your Name</title>
+
+  <!-- Google Fonts: Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -15,8 +18,8 @@
     }
     body {
       margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.55;
+      font-family: "Roboto", Arial, sans-serif; /* switched to Roboto */
+      line-height: 1.6;
       color: var(--accent);
       background: var(--light);
     }
@@ -27,55 +30,60 @@
       flex-direction: row;
     }
     .sidebar {
-      width: 260px;
+      width: 320px; /* wider navy column */
       min-height: 100vh;
-      background: var(--navy); /* ← navy column */
+      background: var(--navy);
       border-right: 2px solid var(--accent);
-      padding: 1.5rem 1rem;
+      padding: 2rem 1.25rem;
       position: sticky;
       top: 0;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      color: #fff; /* text becomes white for contrast */
+      color: #fff;
     }
     .sidebar img {
       width: 100%;
       border-radius: 50%;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
     .sidebar h1 {
-      font-size: 1.75rem;
-      margin: 0 0 1.5rem;
+      font-size: 2rem;
+      margin: 0 0 2rem;
+      font-weight: 500;
       color: #fff;
     }
     .sidebar nav {
       display: flex;
       flex-direction: column;
-      gap: 0.5rem;
+      gap: 0.75rem;
     }
     .sidebar nav a {
       text-decoration: none;
-      color: #fff; /* links white by default */
-      font-weight: 600;
+      color: #fff;
+      font-weight: 500;
     }
     .sidebar nav a:hover {
       text-decoration: underline;
-      color: #f0f8ff; /* light tint on hover */
+      color: #e6ecff;
     }
 
     main {
       flex: 1;
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 2.5rem 1rem;
+      padding: 3rem 1.5rem;
     }
-    h2 { margin-top: 3rem; }
-    h3 { margin-top: 1.5rem; }
+    /* increased spacing between sections */
+    main section {
+      margin-bottom: 4rem; /* added bottom margin */
+    }
+    h2 { margin-top: 0; font-size: 1.75rem; }
+    h3 { margin-top: 1.75rem; }
     hr  { border: none; border-top: 2px solid var(--accent); margin: 3rem 0 2rem; }
 
-    details { margin: 0.8rem 0 1.3rem; }
-    summary { cursor: pointer; font-weight: 600; }
+    details { margin: 1rem 0 1.5rem; }
+    summary { cursor: pointer; font-weight: 500; }
 
     /* --- Responsive tweaks --------------------------------------------- */
     @media (max-width: 800px) {
@@ -86,6 +94,7 @@
         align-items: center;
         border-right: none;
         border-bottom: 2px solid var(--accent);
+        padding: 1rem;
       }
       .sidebar img {
         width: 60px;
@@ -125,7 +134,7 @@
       <!-- About -->
       <section id="about">
         <p>
-          I am a <strong>PhD Candidate</strong> at <em>University of British Columbia</em>.<br>
+          I am a <strong>POSITION</strong> at <em>Institution</em>.<br>
           My research focuses on <em>key interests</em>.<br>
           Download my <a href="cv.pdf">CV</a>.
         </p>
@@ -141,9 +150,7 @@
 
         <details>
           <summary>Show / hide abstract</summary>
-          <p>
-            Concise abstract goes here.
-          </p>
+          <p>Concise abstract goes here.</p>
         </details>
       </section>
 
@@ -165,12 +172,4 @@
         <h3>Paper Title</h3>
         <p>with Co-author A, Co-author B · Last update: Month Year</p>
         <details><summary>Show / hide abstract</summary>
-          <p>Abstract text …</p>
-        </details>
-      </section>
-
-      <!-- Work in Progress -->
-      <section id="wip">
-        <h2>Work in Progress</h2>
-
-        <h3>Proj
+          <p>Abstr
