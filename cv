@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Curriculum Vitae
+title: Thomas Chan Academic CV
 permalink: /cv/
 ---
 
@@ -48,8 +48,8 @@ Courses supported:
 
 ## Job‑Market Paper
 
-> **“Adaptive Experiment Design for Estimating a General Class of Causal Effects.”**  
-> Develops a unified adaptive‑experiment framework targeting efficient estimation of a wide class of causal parameters—including distributional effects and inequality measures—by sequentially updating treatment randomization to achieve minimal asymptotic variance. Empirical illustrations draw on the Oregon Health Experiment and simulation evidence.
+- **“Adaptive Experiment Design for Estimating a General Class of Causal Effects.”**  
+  Develops a unified adaptive‑experiment framework targeting efficient estimation of a wide class of causal parameters—including distributional effects and inequality measures—by sequentially updating treatment randomization to achieve minimal asymptotic variance. Empirical illustrations draw on the Oregon Health Experiment and simulation evidence.
 
 ---
 
