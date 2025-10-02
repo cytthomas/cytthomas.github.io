@@ -4,8 +4,6 @@ title: Curriculum Vitae
 permalink: /cv/
 ---
 
-# Thomas Chan
-
 **Email:** thomas.yautung.chan@gmail.com  
 **Phone:** +1‑778‑317‑1781  
 **Website:** <https://cytthomas.github.io/>
@@ -48,8 +46,8 @@ Courses supported:
 
 ## Job‑Market Paper
 
-> **“Adaptive Experiment Design for Estimating a General Class of Causal Effects.”**  
-> Develops a unified adaptive‑experiment framework targeting efficient estimation of a wide class of causal parameters—including distributional effects and inequality measures—by sequentially updating treatment randomization to achieve minimal asymptotic variance. Empirical illustrations draw on the Oregon Health Experiment and simulation evidence.
+- **“Adaptive Experiment Design for Estimating a General Class of Causal Effects.”**  
+  Develops a unified adaptive‑experiment framework targeting efficient estimation of a wide class of causal parameters—including distributional effects and inequality measures—by sequentially updating treatment randomization to achieve minimal asymptotic variance. Empirical illustrations draw on the Oregon Health Experiment and simulation evidence.
 
 ---
 
@@ -123,5 +121,5 @@ Courses supported:
 
 ---
 
-*Last updated: {{ "now" | date: "%B %-d, %Y" }}*
+
 
