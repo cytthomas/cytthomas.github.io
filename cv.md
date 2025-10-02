@@ -77,7 +77,7 @@ Courses supported:
 - Western Economic Association International (WEAI)  
 - CalMetrics  
 - Midwest Econometrics Group (MEG) — *scheduled*  
-- Canadian Econometrics Study Group (CESG) — *poster, scheduled*
+- Canadian Econometrics Study Group (CESG) — *poster session, scheduled*
 
 ---
 
