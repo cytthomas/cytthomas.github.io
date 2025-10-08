@@ -32,9 +32,9 @@
       <div class="sticky top-24 flex flex-col items-center space-y-8">
         <img src="Thomas_Photo1.jpg" alt="Your photo" class="rounded-full shadow-lg w-[200px] h-[200px]" />
         <nav class="flex flex-col space-y-4 text-lg font-semibold" style="color: var(--accent);">
-          <a href="#about" class="hover:underline">About</a>
           <a href="#Job Market Paper" class="hover:underline">Job Market Paper</a>
-          <a href="#publications" class="hover:underline">Publications</a>
+          <a href="#Working Papers" class="hover:underline">Working Papers</a>
+          <a href="#Work in Progress" class="hover:underline">Work in Progerss</a>
           <a href="#contact" class="hover:underline">Contact</a>
         </nav>
       </div>
@@ -61,17 +61,7 @@
 
       <hr />
 
-      <!-- About -->
-      <section id="about">
-        <h2 class="font-display font-bold text-4xl" style="color: var(--accent);">About</h2>
-        <p>
-          I .....
-        </p>
-      </section>
-
-      <hr />
-
-      <!-- Job Market Paper -->
+     <!-- Job Market Paper -->
       <section id="Job Market Paper">
         <h2 class="font-display font-bold text-4xl" style="color: var(--accent);">Job Market Paper</h2>
 <h3
@@ -103,16 +93,16 @@
   class="font-display text-2xl leading-relaxed mt-4 mb-0"
   style="color:#444;">
   <a href="https://github.com/your-handle/project-one">
-    Adaptive Experiment Design for Estimating a General Class of Causal Effects
+    Policy Learning with Compliance Guarantee
   </a>
 </h3>
-        <p class="not-prose text-sm text-gray-500">2025</p>
+        <p class="not-prose text-sm text-gray-500">2025 · With Vadim Marmer and Kyungchul Song </p>
        <p>
-  This paper develops a unified adaptive-experiment framework that targets efficient estimation of a general class of causal parameters.
+  We study optimal policy learning where a policy maker uses policy outcome data from a source population to design treatment assignments for a target population under budget constraint.
 </p>
         <details>
           <summary class="cursor-pointer" style="color: var(--accent);">Show/hide details</summary>
-          <p class="text-sm italic">Beyond average and quantile treatment effects, the framework accommodates distributional effects, inequality measures, and other policy-relevant targets. Since experiments often inform real world decisions with more nuanced objectives, this adaptive approach broadens the scope of experimentation for practical decision-making. In this framework, treatment randomization is updated sequentially based on accumulated data, enabling estimators to achieve minimal asymptotic variance. Theoretical results demonstrating optimal efficiency are supported by empirical illustrations based on data from the Oregon Health Experiment and other simulation evidence
+          <p class="text-sm italic">Due to the budget constraint, the policy maker needs to consider both the treatment effects and individuals’ incentives for treatment participation to minimize wasted resources. The main challenge is that treatment participation incentives may differ between the two populations. We develop a maximin approach that maximizes the minimum expected treatment outcome across all possible incentive configurations. We find that this optimal policy learning problem transforms into one with stochastic dominance constraints, where optimal assignment prioritizes individuals most likely to comply with the treatment assignment.
           </p>
         </details>
 
@@ -121,14 +111,25 @@
 
       <hr />
 
-      <!-- Publications -->
-      <section id="publications">
-        <h2 class="font-display font-bold text-4xl" style="color: var(--accent);">Publications</h2>
-        <h3><a href="#">Title of Article or Paper</a></h3>
-        <p class="not-prose text-sm text-gray-500">Conference / Journal · 2023</p>
-        <p>
-          One-line abstract or key takeaway. <a href="#">[PDF]</a>
-        </p>
+      <!-- Work in Progress -->
+      <section id="Work in Progress">
+        <h2 class="font-display font-bold text-4xl" style="color: var(--accent);"Work in Progress</h2>
+        <h3
+  class="font-display text-2xl leading-relaxed mt-4 mb-0"
+  style="color:#444;">
+  <a href="https://github.com/your-handle/project-one">
+    Asymmetric and Optimal Bandwidth Selection in Estimation for First Price Auctions
+  </a>
+</h3>
+        <p class="not-prose text-sm text-gray-500">2025</p>
+       <p>
+  I analyze bandwidth selection in the estimator proposed by Guerre, Perrigne, and Vuong (2000). I extend the inference framework of Ma, Marmer, and Shneyerov (2019) to cases where the ratio of the first- to second-stage bandwidths converges to either zero or infinity.
+</p>
+        <details>
+          <summary class="cursor-pointer" style="color: var(--accent);">Show/hide details</summary>
+          <p class="text-sm italic">In such regimes, the asymptotic normality is governed by the stage with the slower bandwidth rate. Further analysis shows that minimizing the pointwise mean squared error requires the bandwidth ratio to converge to zero. This result is driven by a bias-variance tradeoff that arises across the two estimation stages under certain conditions
+          </p>
+        </details>
       </section>
 
       <hr />
