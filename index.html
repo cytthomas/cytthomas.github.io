@@ -6,8 +6,10 @@
   <title>Thomas Chan | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" /> 
-  <style> body { font-family: "Inter", system-ui, sans-serif; font-size: 18px; } .font-display { font-family: "Bebas Neue", cursive; }
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: "Inter", system-ui, sans-serif; font-size: 18px; }
+    .font-display { font-family: "League Spartan", cursive; }
     :root { --accent: #1e3a8a; }
     a { color: var(--accent); }
     hr { border-color: var(--accent); margin-top: 0; margin-bottom: 0; }
@@ -42,7 +44,7 @@
     <main class="flex-1 prose prose-lg dark:prose-invert space-y-20">
       <!-- Hero / Header -->
       <section id="hero" class="lg:mt-24">
-        <h1 class="font-display text-6xl font-extrabold tracking-wide uppercase" style="color: var(--accent);">Thomas Chan</h1>
+        <h1 class="font-display text-6xl font-extrabold tracking-wide lowercase" style="color: var(--accent);">Thomas Chan</h1>
         <p class="not-prose text-lg text-gray-600 dark:text-gray-400 mt-2">
           Vancouver, BC · <a href="mailto:you@example.com">thomas.yautung.chan@gmail.com</a>
         </p>
@@ -73,7 +75,7 @@
       <section id="Job Market Paper">
         <h2 class="font-display font-bold text-4xl" style="color: var(--accent);">Job Market Paper</h2>
 <h3
-  class="font-display font-bold text-2xl leading-relaxed mt-4 mb-0"
+  class="font-display text-2xl leading-relaxed mt-4 mb-0"
   style="color:#444;">
   <a href="https://github.com/your-handle/project-one">
     Adaptive Experiment Design for Estimating a General Class of Causal Effects
@@ -84,14 +86,20 @@
   This paper develops a unified adaptive-experiment framework that targets efficient estimation of a general class of causal parameters.
 </p>
         <details>
-         <summary class="cursor-pointer " style="color: var(--accent);">
+         <summary class="cursor-pointer text-sm" style="color: var(--accent);">
   Show/hide details
 </summary>
           <p>Beyond average and quantile treatment effects, the framework accommodates distributional effects, inequality measures, and other policy-relevant targets. Since experiments often inform real world decisions with more nuanced objectives, this adaptive approach broadens the scope of experimentation for practical decision-making. In this framework, treatment randomization is updated sequentially based on accumulated data, enabling estimators to achieve minimal asymptotic variance. Theoretical results demonstrating optimal efficiency are supported by empirical illustrations based on data from the Oregon Health Experiment and other simulation evidence
           </p>
         </details>
 
-       
+        <h3><a href="https://github.com/your-handle/project-two">Project Two</a></h3>
+        <p class="not-prose text-sm text-gray-500">2024 · Next.js, Typescript</p>
+        <p>Concise overview of what makes this project noteworthy.</p>
+      </section>
+
+      <hr />
+
       <!-- Publications -->
       <section id="publications">
         <h2 class="font-display font-bold text-4xl" style="color: var(--accent);">Publications</h2>
