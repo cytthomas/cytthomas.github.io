@@ -6,10 +6,10 @@
   <title>Thomas Chan | Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     body { font-family: "Inter", system-ui, sans-serif; font-size: 18px; }
-    .font-display { font-family: "Bebas Neue", cursive; }
+    .font-display { font-family: "League Spartan", cursive; }
     :root { --accent: #1e3a8a; }
     a { color: var(--accent); }
     hr { border-color: var(--accent); margin-top: 0; margin-bottom: 0; }
@@ -82,11 +82,13 @@
   </a>
 </h3>
         <p class="not-prose text-sm text-gray-500">2025</p>
-       <p class="text-sm italic">
+       <p>
   This paper develops a unified adaptive-experiment framework that targets efficient estimation of a general class of causal parameters.
 </p>
         <details>
-          <summary class="cursor-pointer" style="color: var(--accent);">Show/hide details</summary>
+         <summary class="cursor-pointer text-sm" style="color: var(--accent);">
+  Show/hide details
+</summary>
           <p>Beyond average and quantile treatment effects, the framework accommodates distributional effects, inequality measures, and other policy-relevant targets. Since experiments often inform real world decisions with more nuanced objectives, this adaptive approach broadens the scope of experimentation for practical decision-making. In this framework, treatment randomization is updated sequentially based on accumulated data, enabling estimators to achieve minimal asymptotic variance. Theoretical results demonstrating optimal efficiency are supported by empirical illustrations based on data from the Oregon Health Experiment and other simulation evidence
           </p>
         </details>
